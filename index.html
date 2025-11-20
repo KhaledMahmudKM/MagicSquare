@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Khaled Mahmud" />  
+  <meta name="description" content="Create Magic Square of any size. Solve or get the solution." />
+  <meta name="keywords" content="magic square" />
+  <title>Create and Solve Magic Square of Any Size</title>
+  <link rel="stylesheet" type="text/css" href="magic.css">
+  <script src="magic.js"></script>
+</head>
+<body>
+<div style="align-content: center;">
+<div id="idBanner" class="clTitleBannner">      
+      Magic Square<br>
+</div>
+
+<hr>
+<pre>
+  1. Choose a size (odd number).
+  2. Click two cells from the inner sqaure to swap.
+  3. Top and left cells show the sums.
+</pre>
+<label for="fname">N: </label>
+<input type="number" id="NValue" name="NValue" value = "3" style="width: 150px;">
+
+<button onclick="createBtnClicked()"> Create Square </button>
+
+
+<br>
+<script>
+
+</script>
+<div id="idMagicContainer" class="clMagicContainer">
+
+  <div id="idDiagonal135" class="clDiagContainer"></div>
+  <div id="idColSumContainer" class="clColSumContainer"></div>
+  <div id="idDiagonal45" class="clDiagContainer"></div>
+
+  <div id="idRowSumContainer" class="clRowSumContainer" style="clear:both"></div>
+  <div id="idSqContainer" class="clSqContainer"></div> 
+  <div id="idRowSumContainerRight" class="clRowSumContainer"></div>
+  <div id="idDoneDisplay" class="clAllDone" style="clear:both"></div>
+</div>
+
+<div id="idTest" style="clear:both">
+  <button onclick="diagonalValue()">Set Diagonal Numbers</button>
+  <button onclick="solveMagic()">Solve</button>
+</div>
+</div>
+<script>
+  initAll();
+  createSquare(3);
+function  clearBtnClicked(){
+  
+}
+</script>
+</body>
+</html>
